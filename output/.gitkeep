@@ -1,0 +1,18 @@
+# Output Directory
+
+This directory contains generated resume files.
+
+Generated files are typically gitignored to avoid committing personal information,
+but the directory structure is preserved with this .gitkeep file.
+
+## File Naming Convention
+- `{target-role}-{date}.md` for dated versions
+- `{target-role}-latest.md` for current version  
+- `{target-role}-{company}.md` for company-specific versions
+
+## Generated File Structure
+Each generated resume includes:
+- Generation metadata (date, view used, atoms included)
+- Assembled content from selected atoms
+- Proper formatting for ATS compatibility
+- Quality assurance validation results
