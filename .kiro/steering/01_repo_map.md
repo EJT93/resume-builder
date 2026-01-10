@@ -13,7 +13,7 @@ library/           # Reusable content atoms organized by type
 ├── certifications/ # Professional certifications and licenses
 └── education/     # Academic background and training
 views/             # Resume view definitions for different roles/industries
-output/            # Generated resume files (gitignored)
+resumes/           # Generated resume files (gitignored)
 ```
 
 ## File Types and Naming Conventions

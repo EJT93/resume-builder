@@ -114,9 +114,9 @@ Select top N atoms based on resume length constraints
 ## Output Generation Rules
 
 ### File Naming Convention
-- `output/{target-role}-{date}.md` for dated versions
-- `output/{target-role}-latest.md` for current version
-- `output/{target-role}-{company}.md` for company-specific versions
+- `resumes/{target-role}-{date}.md` for dated versions
+- `resumes/{target-role}-latest.md` for current version
+- `resumes/{target-role}-{company}.md` for company-specific versions
 
 ### Metadata Inclusion
 Include generation metadata at top of output file:
@@ -137,8 +137,8 @@ Before finalizing output:
 - Ensure ATS-friendly formatting throughout
 
 ### Version Control Integration
-- Generate new output file for each assembly run
-- Maintain history of generated resumes in output/ folder
+- Generate new resume file for each assembly run
+- Maintain history of generated resumes in resumes/ folder
 - Include git commit hash in metadata for traceability
 - Tag significant resume versions for easy reference
 

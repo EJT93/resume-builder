@@ -24,7 +24,7 @@ library/           # Reusable content atoms
 ├── certifications/ # Professional certifications
 └── education/     # Academic background
 views/             # Resume assembly definitions for different roles
-output/            # Generated resume files (gitignored)
+resumes/           # Generated resume files (gitignored)
 ```
 
 ## How It Works
@@ -44,8 +44,8 @@ Edit files in `profile/` folder:
 
 ### 2. Add Your Experience
 Create files in `library/` subfolders following the content model:
-- Use the question bank in `.kiro/steering/04_question_bank.md` to gather details
-- Follow writing rules in `.kiro/steering/03_writing_rules.md`
+- Follow Harvard resume standards in `.kiro/steering/03_writing_rules.md`
+- Use structured formats defined in `.kiro/steering/02_content_model.md`
 - Mark missing information with TODO instead of inventing facts
 
 ### 3. Create View Definitions
@@ -56,9 +56,9 @@ Define how resumes should be assembled in `views/` folder:
 
 ### 4. Generate Resumes
 Use Kiro IDE with natural language prompts:
-- "Generate a platform engineer resume"
-- "Create a resume targeting senior backend roles"
-- "Assemble a 1-page resume for startup positions"
+- "Generate a platform engineer resume following Harvard standards"
+- "Create a resume targeting senior backend roles at fintech companies"
+- "Assemble a 1-page resume for startup engineering positions"
 
 ## Key Principles
 
@@ -72,9 +72,9 @@ Use Kiro IDE with natural language prompts:
 
 - `00_mission.md` - Purpose and principles
 - `01_repo_map.md` - Structure and navigation
-- `02_content_model.md` - Atom types and formats
-- `03_writing_rules.md` - Quality and style standards
-- `04_question_bank.md` - Content development questions
+- `02_content_model.md` - Atom types and Harvard-compliant formats
+- `03_writing_rules.md` - Harvard resume standards and quality guidelines
+- `04_question_bank.md` - Kiro's direct resume generation approach
 - `05_resume_assembly_rules.md` - Selection and ordering logic
 
 ## Example Usage
@@ -82,13 +82,13 @@ Use Kiro IDE with natural language prompts:
 ```
 # In Kiro IDE chat
 "I need a resume for a DevOps engineer position at a fintech startup. 
-Emphasize automation and scalability experience, keep it to 1.5 pages."
+Use Harvard resume format, emphasize automation and scalability experience, keep it to 1 page."
 
 # Kiro will:
-1. Reference steering files for assembly rules
-2. Select relevant atoms based on tags and priorities
-3. Order content according to view definition
-4. Generate tailored resume in output/ folder
+1. Reference steering files for Harvard formatting and assembly rules
+2. Select relevant atoms based on tags, recency, and impact scores
+3. Apply fintech industry terminology and compliance focus
+4. Generate Harvard-standard resume in resumes/ folder with proper formatting
 ```
 
 ## Contributing to Your Own Repository
@@ -100,7 +100,7 @@ Emphasize automation and scalability experience, keep it to 1.5 pages."
 
 ## Privacy and Security
 
-- Generated resumes in `output/` folder should be gitignored
+- Generated resumes in `resumes/` folder should be gitignored
 - Consider using private repository for personal information
 - Review all content before sharing or publishing
 - Use TODO markers instead of placeholder personal data

@@ -1,139 +1,116 @@
-# Question Bank for Content Development
+# Kiro Resume Generation Guidelines
 
-## Questions for Creating New Role Atoms
+## Direct Resume Generation Approach
 
-### Basic Information
-- What was your exact job title at this company?
-- What were the start and end dates (month/year) for this position?
-- What was the company's full legal name and your work location?
-- How would you categorize this role? (individual contributor, team lead, manager, etc.)
+Kiro generates resumes directly based on role requirements without requiring extensive user interviews. The system uses intelligent content selection and Harvard resume standards to create professional, targeted resumes.
 
-### Responsibilities and Scope
-- What were your 3-5 primary responsibilities in this role?
-- How large was your team or the teams you worked with?
-- What was the scope of your authority and decision-making?
-- Which systems, products, or services did you directly impact?
+## Role-Based Content Selection
 
-### Quantifiable Impact
-- What measurable improvements did you deliver? (performance, cost, time, quality)
-- How many users, customers, or stakeholders did your work affect?
-- What was the financial impact of your contributions? (revenue, savings, budget managed)
-- How did you measure success in this role?
+### Automatic Content Prioritization
+When generating a resume for a specific role, Kiro automatically:
+- **Analyzes target role requirements** from job descriptions or role type
+- **Selects most relevant atoms** based on tag matching and relevance scoring
+- **Prioritizes recent experience** (last 5-10 years) over older roles
+- **Emphasizes quantified achievements** that demonstrate impact
+- **Adapts language and terminology** to match industry standards
 
-### Technical Context
-- What technologies, tools, and platforms did you work with?
-- What was the scale of the systems you worked on? (users, data, transactions)
-- What architectural or technical decisions did you influence?
-- What standards or best practices did you establish or follow?
+### Content Selection Algorithm
+```
+For target role:
+1. Identify required skills and experience from role type
+2. Score all atoms based on tag relevance and recency
+3. Select top-scoring atoms within length constraints
+4. Order content by impact and relevance
+5. Apply Harvard formatting standards
+6. Generate final resume with metadata
+```
 
-## Questions for Creating Project Atoms
+## Role-Specific Generation Rules
 
-### Project Scope
-- What business problem was this project solving?
-- How long did the project take from start to completion?
-- What was your specific role and level of ownership?
-- Who were the key stakeholders and team members?
+### Engineering Roles (Platform, Backend, Frontend, DevOps)
+- **Emphasize**: Technical skills, system scale, performance metrics
+- **Prioritize**: Recent technical projects, architecture decisions, automation
+- **Include**: Relevant certifications, open source contributions
+- **Language**: Technical depth appropriate for engineering audience
 
-### Technical Implementation
-- What was the high-level technical approach?
-- Which technologies were chosen and why?
-- What were the main technical challenges overcome?
-- How did the solution integrate with existing systems?
+### Management Roles (Engineering Manager, Director, VP)
+- **Emphasize**: Team leadership, business impact, strategic initiatives
+- **Prioritize**: People management experience, budget responsibility, growth metrics
+- **Include**: Team size, retention rates, process improvements
+- **Language**: Balance of technical credibility and business acumen
 
-### Measurable Outcomes
-- What were the quantified business results? (revenue, cost savings, efficiency)
-- How did you measure technical success? (performance, reliability, scalability)
-- What was the user or customer impact? (adoption, satisfaction, usage)
-- Were there any unexpected benefits or learnings?
+### Product Roles (Product Manager, Product Owner, Strategy)
+- **Emphasize**: User impact, business metrics, cross-functional collaboration
+- **Prioritize**: Product launches, user growth, revenue impact
+- **Include**: Market research, user research, A/B testing experience
+- **Language**: Business-focused with technical understanding
 
-## Questions for Refining Vague Answers
+### Sales/Business Development Roles
+- **Emphasize**: Revenue generation, quota achievement, relationship building
+- **Prioritize**: Sales metrics, deal sizes, territory growth
+- **Include**: CRM experience, pipeline management, customer success
+- **Language**: Results-oriented with clear financial impact
 
-### When Someone Says "Improved Performance"
-- What specific metric improved? (response time, throughput, error rate)
-- What was the baseline measurement before your work?
-- What was the final measurement after your improvements?
-- Over what time period was this improvement measured?
+## Industry-Specific Adaptations
 
-### When Someone Says "Led a Team"
-- How many people were on the team?
-- What were their roles and seniority levels?
-- Did you have direct management authority or was it project leadership?
-- How long did you lead this team?
+### Technology/Software Industry
+- **Technical depth**: Include specific technologies, frameworks, architectures
+- **Scale metrics**: User counts, transaction volumes, system performance
+- **Innovation focus**: New technologies adopted, technical leadership
+- **Collaboration**: Cross-functional work, technical mentoring
 
-### When Someone Says "Worked on a Large Project"
-- What was the total budget or investment in this project?
-- How many team members were involved across all functions?
-- What was the timeline from conception to delivery?
-- How many users or customers were ultimately affected?
+### Financial Services/Fintech
+- **Compliance emphasis**: Regulatory knowledge, security standards
+- **Risk management**: Risk assessment, mitigation strategies
+- **Scale and reliability**: Transaction volumes, uptime requirements
+- **Business impact**: Revenue generation, cost reduction, efficiency
 
-### When Someone Says "Saved Money"
-- What was the specific dollar amount saved annually?
-- Was this a one-time saving or recurring annual savings?
-- How was this saving calculated and verified?
-- What process or system change enabled this saving?
+### Healthcare/Biotech
+- **Regulatory compliance**: HIPAA, FDA, clinical trial standards
+- **Patient impact**: Patient outcomes, safety improvements
+- **Research focus**: Clinical research, data analysis, publications
+- **Collaboration**: Cross-disciplinary teams, medical professionals
 
-## Role-Specific Tailoring Questions
+### Consulting/Professional Services
+- **Client impact**: Client satisfaction, project success rates
+- **Business development**: New client acquisition, relationship management
+- **Expertise demonstration**: Industry knowledge, thought leadership
+- **Project management**: Multiple concurrent projects, stakeholder management
 
-### For Engineering Roles
-- What was the architecture and scale of systems you built or maintained?
-- How did you ensure code quality and system reliability?
-- What was your approach to testing and deployment?
-- How did you handle technical debt and system evolution?
+## Experience Level Adaptations
 
-### For Management Roles
-- How did you develop and retain team members?
-- What was your approach to goal setting and performance management?
-- How did you handle resource allocation and priority decisions?
-- What processes did you implement to improve team effectiveness?
+### Junior Level (0-3 years)
+- **Education emphasis**: Relevant coursework, academic projects, GPA if 3.5+
+- **Internship details**: Specific contributions and learning outcomes
+- **Skill development**: Training completed, certifications earned
+- **Project focus**: Individual contributions and technical growth
 
-### For Product Roles
-- How did you gather and prioritize user requirements?
-- What metrics did you use to measure product success?
-- How did you work with engineering and design teams?
-- What was your approach to competitive analysis and market research?
+### Mid-Level (3-8 years)
+- **Technical expertise**: Deep skills in specific areas, problem-solving
+- **Project leadership**: Leading initiatives, mentoring junior team members
+- **Business impact**: Quantified contributions to team and company goals
+- **Professional growth**: Career progression, expanding responsibilities
 
-### For Sales/Business Development Roles
-- What was your quota and how consistently did you achieve it?
-- What was your average deal size and sales cycle length?
-- How did you build and maintain your pipeline?
-- What tools and processes did you use to track and optimize performance?
+### Senior Level (8+ years)
+- **Strategic impact**: Influence on company direction, architectural decisions
+- **Leadership experience**: Team building, cross-functional collaboration
+- **Industry expertise**: Thought leadership, speaking, publications
+- **Mentorship**: Developing others, knowledge sharing, culture building
 
-## Follow-up Questions for Incomplete Answers
+## Automatic Content Enhancement
 
-### For Missing Metrics
-- "Can you estimate the approximate range if you don't have exact numbers?"
-- "What would be a conservative estimate of the impact?"
-- "Who might have access to these specific metrics?"
-- "What qualitative indicators showed this was successful?"
+### Kiro's Content Optimization
+When generating resumes, Kiro automatically:
+- **Strengthens action verbs**: Replaces weak verbs with Harvard-approved alternatives
+- **Adds business context**: Connects technical work to business outcomes
+- **Quantifies impact**: Emphasizes metrics and measurable results
+- **Optimizes keywords**: Includes industry-standard terminology
+- **Ensures consistency**: Maintains parallel structure and formatting
 
-### For Unclear Timelines
-- "Was this a few weeks, months, or years of work?"
-- "Did this happen early in your tenure or later?"
-- "Was this an ongoing responsibility or a specific project?"
-- "How did this timeline compare to similar projects?"
-
-### For Vague Responsibilities
-- "What would a typical day or week look like in this role?"
-- "What decisions were you empowered to make independently?"
-- "What would have happened if you weren't in this role?"
-- "How did your responsibilities evolve over time?"
-
-## Questions for View Definition Creation
-
-### Target Role Analysis
-- What are the 3-5 most important qualifications for this type of role?
-- What experience level is typically required? (junior, mid, senior, staff, etc.)
-- What industry or domain knowledge is most valued?
-- What are the key technical skills versus soft skills needed?
-
-### Content Prioritization
-- Which of your experiences most directly relate to this target role?
-- What achievements would be most impressive to hiring managers in this field?
-- Which projects demonstrate the skills this role requires?
-- What aspects of your background might be less relevant and could be de-emphasized?
-
-### Resume Length and Focus
-- Is this typically a 1-page or 2-page resume role?
-- Should the focus be on recent experience or career progression?
-- How technical should the language be for the target audience?
-- What level of detail is appropriate for project descriptions?
+### Quality Assurance Checks
+Before finalizing resumes, Kiro verifies:
+- **Harvard format compliance**: Proper structure, length, and formatting
+- **ATS compatibility**: Clean formatting, appropriate keywords
+- **Content accuracy**: No TODO markers in final output
+- **Professional tone**: Appropriate language for target role and industry
+- **Completeness**: All required sections present and properly formatted

@@ -1,4 +1,4 @@
-# Output Directory
+# Resumes Directory
 
 This directory contains generated resume files.
 
@@ -14,5 +14,5 @@ but the directory structure is preserved with this .gitkeep file.
 Each generated resume includes:
 - Generation metadata (date, view used, atoms included)
 - Assembled content from selected atoms
-- Proper formatting for ATS compatibility
-- Quality assurance validation results
+- Harvard resume format compliance
+- ATS-friendly formatting for applicant tracking systems
