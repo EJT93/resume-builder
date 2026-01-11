@@ -16,13 +16,15 @@ Resume-as-code treats your professional history like source code:
 ```
 .kiro/steering/     # System behavior definitions
 profile/           # Personal identity and contact information
-library/           # Reusable content atoms
-├── roles/         # Professional positions
-├── projects/      # Specific projects and initiatives  
-├── achievements/  # Awards and recognitions
-├── skills/        # Technical and soft skills
-├── certifications/ # Professional certifications
-└── education/     # Academic background
+├── identity.md    # Contact info and professional headline
+├── links.md       # Professional URLs and profiles
+├── summary.md     # Professional summary variants
+├── certifications.md # Professional certifications
+├── education.md   # Academic background
+└── skills.md      # Technical and professional skills
+experience/        # Professional experience content
+├── roles.md       # All professional positions
+└── projects.md    # All projects and initiatives
 views/             # Resume assembly definitions for different roles
 resumes/           # Generated resume files (gitignored)
 ```
@@ -41,12 +43,13 @@ Edit files in `profile/` folder:
 - `identity.md` - Contact information and basic details
 - `links.md` - Professional URLs and social profiles  
 - `summary.md` - Professional summary variants for different contexts
+- `certifications.md` - Professional certifications with dates
 
 ### 2. Add Your Experience
-Create files in `library/` subfolders following the content model:
-- Follow Harvard resume standards in `.kiro/steering/03_writing_rules.md`
-- Use structured formats defined in `.kiro/steering/02_content_model.md`
-- Mark missing information with TODO instead of inventing facts
+Update files in `experience/` folder:
+- `roles.md` - Add all your professional positions with achievements
+- `projects.md` - Add all your projects with company/role context
+- Follow Harvard resume standards and mark missing info with TODO
 
 ### 3. Create View Definitions
 Define how resumes should be assembled in `views/` folder:
@@ -93,8 +96,8 @@ Use Harvard resume format, emphasize automation and scalability experience, keep
 
 ## Contributing to Your Own Repository
 
-1. **Add new experiences**: Create atoms in appropriate library folders
-2. **Update existing content**: Edit atoms to add metrics or refine descriptions
+1. **Add new experiences**: Update `experience/roles.md` and `experience/projects.md`
+2. **Update existing content**: Edit entries to add metrics or refine descriptions
 3. **Create new views**: Define assembly rules for different target roles
 4. **Refine steering**: Update rules based on what works best for your career
 

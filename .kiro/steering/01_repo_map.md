@@ -5,13 +5,9 @@
 ```
 .kiro/steering/     # All system behavior definitions (this folder)
 profile/           # Personal identity and contact information
-library/           # Reusable content atoms organized by type
-├── roles/         # Professional positions and responsibilities
-├── projects/      # Specific projects and initiatives
-├── achievements/  # Awards, recognitions, and notable accomplishments
-├── skills/        # Technical and soft skills with proficiency levels
-├── certifications/ # Professional certifications and licenses
-└── education/     # Academic background and training
+experience/        # Professional experience content
+├── roles.md       # All professional positions and responsibilities
+└── projects.md    # All projects and initiatives
 views/             # Resume view definitions for different roles/industries
 resumes/           # Generated resume files (gitignored)
 ```
@@ -22,14 +18,13 @@ resumes/           # Generated resume files (gitignored)
 - `profile/identity.md` - Name, title, location, contact info
 - `profile/links.md` - Professional links (LinkedIn, GitHub, portfolio)
 - `profile/summary.md` - Professional summary paragraphs for different contexts
+- `profile/certifications.md` - Professional certifications with dates
+- `profile/education.md` - Academic background and degrees
+- `profile/skills.md` - Technical and professional skills
 
-### Library Content Atoms
-- **Roles**: `library/roles/{job-title-company}.md` (e.g., `senior-engineer-acme.md`)
-- **Projects**: `library/projects/{project-name}.md` (e.g., `payment-system-redesign.md`)
-- **Achievements**: `library/achievements/{achievement-name}.md` (e.g., `aws-certification.md`)
-- **Skills**: `library/skills/{skill-category}.md` (e.g., `cloud-platforms.md`)
-- **Certifications**: `library/certifications/{cert-name}.md` (e.g., `pmp-certification.md`)
-- **Education**: `library/education/{degree-institution}.md` (e.g., `bs-computer-science-mit.md`)
+### Experience Content Files
+- **Roles**: `experience/roles.md` - All professional positions in chronological order
+- **Projects**: `experience/projects.md` - All projects with company/role context specified
 
 ### View Definitions
 - `views/{target-role}.view.md` - Defines how to assemble resume for specific role types
@@ -37,11 +32,10 @@ resumes/           # Generated resume files (gitignored)
 
 ## Adding New Content
 
-### New Content Atoms
-1. Create file in appropriate library subfolder
-2. Use kebab-case naming convention
-3. Follow content model structure from `02_content_model.md`
-4. Add relevant tags in frontmatter for filtering
+### New Content
+1. Add new roles to `experience/roles.md` following the content model structure
+2. Add new projects to `experience/projects.md` with company/role context
+3. Use consistent formatting and include relevant tags for filtering
 
 ### New View Definitions
 1. Create `.view.md` file in views/ folder
@@ -51,7 +45,7 @@ resumes/           # Generated resume files (gitignored)
 
 ## File Relationships
 
-- Views reference atoms by filename (without extension)
-- Atoms are self-contained and don't reference each other
+- Views reference content from experience files by section or tags
+- Experience files contain multiple entries that can be selectively included
 - Profile files are automatically included in all resumes
-- Tags in frontmatter enable filtering and selection logic
+- Tags and priorities within experience files enable filtering and selection logic

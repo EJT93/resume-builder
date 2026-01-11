@@ -11,7 +11,7 @@
 
 ### Selection Algorithm
 ```
-For each atom in library:
+For each atom in experience:
   Calculate relevance_score = tag_match_count * tag_weight
   Calculate recency_score = years_ago_factor * recency_weight  
   Calculate impact_score = metric_strength * impact_weight
@@ -24,10 +24,9 @@ Select top N atoms based on resume length constraints
 ```
 
 ### Mandatory Inclusions
-- All profile atoms (identity, links, summary) are always included
+- All profile atoms (identity, links, summary, certifications, education, skills) are always included
 - Current role (if end_date = "present") is always included
 - Any atom with `priority: 5` in frontmatter is always included
-- Education atoms for roles requiring specific degrees
 
 ### Automatic Exclusions
 - Atoms with `draft: true` in frontmatter
@@ -42,9 +41,9 @@ Select top N atoms based on resume length constraints
 2. Professional Summary (from profile/summary.md, tailored to view)
 3. Professional Experience (roles, ordered by end_date descending)
 4. Key Projects (if not integrated into roles, ordered by impact/recency)
-5. Technical Skills (from skills atoms, grouped by category)
-6. Education (ordered by graduation_date descending)
-7. Certifications (ordered by date_earned descending)
+5. Technical Skills (from profile/skills.md, grouped by category)
+6. Education (from profile/education.md)
+7. Certifications (from profile/certifications.md, ordered by relevance/date)
 8. Notable Achievements (if not integrated elsewhere)
 
 ### Within-Section Ordering

@@ -1,25 +1,24 @@
 ---
 type: "links"
-last_updated: "TODO: YYYY-MM-DD"
+last_updated: "2026-01-11""
 ---
 
 # Professional Links
 
 ## Primary Professional Profiles
-- **LinkedIn**: TODO: https://linkedin.com/in/your-profile
-- **GitHub**: TODO: https://github.com/your-username (if applicable)
-- **Portfolio Website**: TODO: https://your-domain.com (if applicable)
-
+- **LinkedIn**: https://www.linkedin.com/in/elijah-torrence-67208169/
+- **GitHub**: https://github.com/EJT93
+- **Portfolio Website**: N/A
 ## Additional Professional Presence
-- **Professional Blog**: TODO: URL (if applicable)
-- **Speaking/Conference Profile**: TODO: URL (if applicable)
-- **Industry Publications**: TODO: URL to author profile (if applicable)
-- **Professional Certifications**: TODO: URL to verification (if applicable)
+- **Professional Blog**: N/A
+- **Speaking/Conference Profile**: N/A
+- **Industry Publications**: N/A
+- **Professional Certifications**: AWS Solutions Architect Associate
 
 ## Social Media (Professional Context Only)
-- **Twitter/X**: TODO: @handle (if professionally relevant)
-- **Medium**: TODO: @handle (if you publish professional content)
-- **Stack Overflow**: TODO: Profile URL (if significant reputation)
+- **Twitter/X**: N/A
+- **Medium**: N/A
+- **Stack Overflow**: N/A
 
 ## Notes
 - Only include links that enhance professional credibility

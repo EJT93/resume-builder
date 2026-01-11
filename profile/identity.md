@@ -1,27 +1,26 @@
 ---
 type: "identity"
-last_updated: "TODO: YYYY-MM-DD"
+last_updated: "2026-01-11""
 ---
 
 # Personal Identity
 
 ## Contact Information
-- **Name**: TODO: Full Name
-- **Title**: TODO: Current Professional Title
-- **Location**: TODO: City, State/Country
-- **Phone**: TODO: (XXX) XXX-XXXX
-- **Email**: TODO: professional.email@domain.com
+- **Name**: Elijah Torrence
+- **Location**: Columbus, OH/USA
+- **Phone**: (419) 610-3073
+- **Email**: elijahtorrence@gmail.com
 
 ## Professional Headline
-TODO: One-line professional headline that captures your value proposition
+Cloud Platform Engineer specializing in AWS infrastructure automation, enterprise scaling, and disaster recovery solutions
 
 ## Location Preferences
-- **Current Location**: TODO: Current city and state/country
-- **Open to Relocation**: TODO: Yes/No
-- **Remote Work**: TODO: Preference (Remote, Hybrid, On-site, Flexible)
-- **Travel Availability**: TODO: Percentage willing to travel
+- **Current Location**: Columbus, OH/USA
+- **Open to Relocation**: No
+- **Remote Work**: Remote, Hybrid
+- **Travel Availability**: None
 
 ## Work Authorization
-- **Status**: TODO: Citizen, Permanent Resident, Visa Type, etc.
-- **Sponsorship Required**: TODO: Yes/No
-- **Restrictions**: TODO: Any work authorization limitations
+- **Status**: Citizen
+- **Sponsorship Required**: No
+- **Restrictions**: None
