@@ -118,12 +118,12 @@ Select top N atoms based on resume length constraints
 - `resumes/{target-role}-{company}.md` for company-specific versions
 
 ### Metadata Inclusion
-Include generation metadata at top of output file:
+Include generation metadata at top of resume file:
 ```markdown
 <!-- Generated: YYYY-MM-DD HH:MM -->
 <!-- Target Role: {role-name} -->
-<!-- View Definition: {view-file} -->
-<!-- Atoms Used: {count} total -->
+<!-- Template: template.view.md -->
+<!-- Content Selected: {count} roles, {count} projects -->
 <!-- Length: {word-count} words, {page-estimate} pages -->
 ```
 
@@ -141,25 +141,18 @@ Before finalizing output:
 - Include git commit hash in metadata for traceability
 - Tag significant resume versions for easy reference
 
-## View-Specific Overrides
+## Universal Template Integration
 
-### Custom Selection Rules
-Views can override default selection with:
-- `required_tags`: Force inclusion of atoms with specific tags
-- `excluded_tags`: Force exclusion of atoms with specific tags  
-- `max_roles`: Limit number of professional roles included
-- `emphasis_areas`: Specify which aspects to highlight
+### Dynamic Content Selection
+The universal template (`template.view.md`) provides framework while Kiro applies intelligent selection:
+- **Role analysis**: Parse user prompt to understand target role requirements
+- **Industry adaptation**: Adjust terminology and emphasis for target industry
+- **Experience level**: Adapt length and detail based on years of experience
+- **Content relevance**: Select most applicable roles and projects from experience files
 
-### Custom Ordering Rules
-Views can specify:
-- Alternative section ordering for industry norms
-- Custom within-section prioritization logic
-- Specific skill groupings or presentations
-- Project integration vs. separate section preferences
-
-### Length Customization
-Views can override:
-- Target page length for specific role types
-- Section allocation percentages
-- Bullet point limits per role/project
-- Detail level for different experience periods
+### Template Override Capabilities
+While the template provides universal guidelines, Kiro can override based on:
+- **User-specific requests**: "Keep it to 1 page", "Emphasize leadership experience"
+- **Industry standards**: Healthcare vs. tech vs. finance formatting preferences
+- **Role requirements**: Technical depth for engineering vs. business focus for management
+- **Company culture**: Startup vs. enterprise vs. government contractor expectations

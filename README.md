@@ -25,7 +25,7 @@ profile/           # Personal identity and contact information
 experience/        # Professional experience content
 ├── roles.md       # All professional positions
 └── projects.md    # All projects and initiatives
-views/             # Resume assembly definitions for different roles
+template.view.md   # Universal resume template for any profession
 resumes/           # Generated resume files (gitignored)
 ```
 
@@ -33,7 +33,7 @@ resumes/           # Generated resume files (gitignored)
 
 1. **Store content as atoms**: Each experience, skill, or achievement is a separate Markdown file
 2. **Define assembly rules**: View files specify how to select and arrange content for different roles
-3. **Generate tailored resumes**: Kiro IDE uses steering files to assemble targeted resumes
+3. **Create targeted resumes**: Kiro IDE uses universal template to assemble resumes for any profession
 4. **Maintain accuracy**: All facts stored once, TODO markers for missing information
 
 ## Getting Started
@@ -51,17 +51,12 @@ Update files in `experience/` folder:
 - `projects.md` - Add all your projects with company/role context
 - Follow Harvard resume standards and mark missing info with TODO
 
-### 3. Create View Definitions
-Define how resumes should be assembled in `views/` folder:
-- Specify target role requirements and preferences
-- Set content selection and ordering rules
-- Configure length and emphasis guidelines
-
-### 4. Generate Resumes
-Use Kiro IDE with natural language prompts:
+### 3. Generate Resumes
+Use Kiro IDE with natural language prompts for any profession:
 - "Generate a platform engineer resume following Harvard standards"
-- "Create a resume targeting senior backend roles at fintech companies"
-- "Assemble a 1-page resume for startup engineering positions"
+- "Create a healthcare administrator resume emphasizing patient outcomes"
+- "Assemble a marketing manager resume for fintech companies"
+- "Build a 1-page resume for entry-level data analyst positions"
 
 ## Key Principles
 
@@ -88,9 +83,9 @@ Use Kiro IDE with natural language prompts:
 Use Harvard resume format, emphasize automation and scalability experience, keep it to 1 page."
 
 # Kiro will:
-1. Reference steering files for Harvard formatting and assembly rules
-2. Select relevant atoms based on tags, recency, and impact scores
-3. Apply fintech industry terminology and compliance focus
+1. Reference universal template and Harvard formatting rules
+2. Select relevant content based on DevOps keywords and fintech industry
+3. Apply appropriate technical terminology and compliance focus
 4. Generate Harvard-standard resume in resumes/ folder with proper formatting
 ```
 
@@ -98,8 +93,7 @@ Use Harvard resume format, emphasize automation and scalability experience, keep
 
 1. **Add new experiences**: Update `experience/roles.md` and `experience/projects.md`
 2. **Update existing content**: Edit entries to add metrics or refine descriptions
-3. **Create new views**: Define assembly rules for different target roles
-4. **Refine steering**: Update rules based on what works best for your career
+3. **Refine template**: Update universal template based on what works best across different professions
 
 ## Privacy and Security
 

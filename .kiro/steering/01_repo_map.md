@@ -8,7 +8,7 @@ profile/           # Personal identity and contact information
 experience/        # Professional experience content
 ├── roles.md       # All professional positions and responsibilities
 └── projects.md    # All projects and initiatives
-views/             # Resume view definitions for different roles/industries
+template.view.md   # Universal resume template for all professions
 resumes/           # Generated resume files (gitignored)
 ```
 
@@ -26,9 +26,8 @@ resumes/           # Generated resume files (gitignored)
 - **Roles**: `experience/roles.md` - All professional positions in chronological order
 - **Projects**: `experience/projects.md` - All projects with company/role context specified
 
-### View Definitions
-- `views/{target-role}.view.md` - Defines how to assemble resume for specific role types
-- Examples: `platform-engineer.view.md`, `product-manager.view.md`, `data-scientist.view.md`
+### Universal Template
+- `template.view.md` - Universal resume template that works for any profession or industry
 
 ## Adding New Content
 
@@ -37,15 +36,15 @@ resumes/           # Generated resume files (gitignored)
 2. Add new projects to `experience/projects.md` with company/role context
 3. Use consistent formatting and include relevant tags for filtering
 
-### New View Definitions
-1. Create `.view.md` file in views/ folder
-2. Define target role, required atoms, ordering rules
-3. Specify length constraints and emphasis areas
-4. Reference existing atoms by filename
+### New Template Updates
+1. Modify `template.view.md` to adjust universal resume generation rules
+2. Update content selection criteria or formatting preferences
+3. Add industry-specific guidance while maintaining universal applicability
 
 ## File Relationships
 
-- Views reference content from experience files by section or tags
+- Universal template provides framework for all resume generation
 - Experience files contain multiple entries that can be selectively included
 - Profile files are automatically included in all resumes
-- Tags and priorities within experience files enable filtering and selection logic
+- Content selection is dynamic based on user prompts and target roles
+- Kiro applies intelligent filtering and emphasis based on template guidelines
