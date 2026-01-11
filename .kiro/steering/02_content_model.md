@@ -1,3 +1,6 @@
+---
+inclusion: always
+---
 # Content Model and Structure
 
 ## Experience File Structure

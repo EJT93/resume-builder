@@ -1,3 +1,6 @@
+---
+inclusion: always
+---
 # Repository Structure and Navigation
 
 ## Folder Hierarchy
@@ -8,7 +11,6 @@ profile/           # Personal identity and contact information
 experience/        # Professional experience content
 ├── roles.md       # All professional positions and responsibilities
 └── projects.md    # All projects and initiatives
-template.view.md   # Universal resume template for all professions
 resumes/           # Generated resume files (gitignored)
 ```
 
@@ -27,7 +29,7 @@ resumes/           # Generated resume files (gitignored)
 - **Projects**: `experience/projects.md` - All projects with company/role context specified
 
 ### Universal Template
-- `template.view.md` - Universal resume template that works for any profession or industry
+- `06_template.md` - Universal resume template that works for any profession or industry
 
 ## Adding New Content
 
@@ -37,7 +39,7 @@ resumes/           # Generated resume files (gitignored)
 3. Use consistent formatting and include relevant tags for filtering
 
 ### New Template Updates
-1. Modify `template.view.md` to adjust universal resume generation rules
+1. Modify `.kiro/steering/06_template.md` to adjust universal resume generation rules
 2. Update content selection criteria or formatting preferences
 3. Add industry-specific guidance while maintaining universal applicability
 

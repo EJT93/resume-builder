@@ -3,7 +3,8 @@ target_role: "Dynamic based on user prompt"
 target_level: "Dynamic based on experience"
 industry_focus: "Dynamic based on target role"
 resume_length: "1-2 pages based on experience level"
-last_updated: "2026-01-11"
+last_updated: "2025-01-11"
+inclusion: always
 ---
 
 # Universal Resume Template
@@ -37,7 +38,16 @@ Kiro will automatically identify and prioritize tags based on target role:
 4. **Always Include**: Relevant certifications, education, and key projects
 5. **Emphasize**: Achievements that align with target role success metrics
 
-## Section Configuration
+## Section Configuration (Harvard Standard)
+
+### Section Order (Compliant with Harvard Format)
+1. **Header**: Name, contact information, LinkedIn/portfolio links
+2. **Education**: Degree, institution, graduation date, relevant coursework/honors (for recent graduates or when highly relevant)
+3. **Professional Experience**: Professional roles in reverse chronological order
+4. **Key Projects**: Relevant projects (if space permits and adds value)
+5. **Technical/Professional Skills**: Technical and relevant professional skills
+6. **Certifications**: Professional certifications and licenses
+7. **Additional**: Awards, languages, publications (if relevant)
 
 ### Professional Summary
 Select appropriate summary variant from profile/summary.md based on target role:
@@ -48,15 +58,17 @@ Select appropriate summary variant from profile/summary.md based on target role:
 
 ### Professional Experience
 - **Maximum Roles**: 3-5 roles depending on experience level and relevance
-- **Detail Level**: Current role gets 4-6 bullets, previous roles get 2-4 bullets
+- **Detail Level**: Current role gets 4-5 bullets, previous roles get 2-4 bullets
 - **Focus Areas**: Adapt based on target role (technical depth, business impact, leadership, etc.)
 - **Metrics Emphasis**: Industry-appropriate metrics (uptime, revenue, patient outcomes, etc.)
+- **Bullet Format**: One line maximum per bullet (Harvard standard)
 
 ### Key Projects Section
 - Include 2-4 most relevant projects that demonstrate target role capabilities
 - Prioritize projects with quantified business impact
 - Emphasize technical complexity for technical roles, business impact for management roles
 - Include cross-functional collaboration for leadership positions
+- **Bullet Format**: Maximum 3 bullets per project, one line each
 
 ### Technical/Professional Skills
 Group skills by relevance to target role:
@@ -66,34 +78,36 @@ Group skills by relevance to target role:
 - **Finance roles**: Financial analysis, regulatory knowledge, systems expertise
 - **Sales/Marketing roles**: CRM systems, analytics tools, communication skills
 
-### Education
-- **Recent graduates**: Detailed education section with relevant coursework
-- **Experienced professionals**: Brief mention focusing on relevant degrees/certifications
-- **Career changers**: Emphasize transferable education and continuous learning
+### Education (Harvard Format)
+- **Recent graduates (0-3 years)**: Detailed education section with relevant coursework, GPA if 3.5+, honors
+- **Experienced professionals (3+ years)**: Brief mention focusing on relevant degrees/certifications
+- **Format**: Institution, Degree, Graduation Date, Location, GPA (if 3.5+), Honors
 
 ### Certifications
 - Prioritize certifications most relevant to target role and industry
 - Include expiration dates for time-sensitive certifications
 - Group by relevance (professional, technical, industry-specific)
+- List in reverse chronological order
 
 ## Length and Emphasis Guidelines
 
-### Page Allocation (Dynamic based on experience)
-**1 Page (0-3 years experience)**:
-- Contact + Summary: 15%
-- Experience: 50%
-- Education: 20%
-- Skills: 10%
+### Page Allocation (Harvard Standard)
+**1 Page (0-5 years experience)**:
+- Header: 10%
+- Education: 25% (detailed for recent graduates)
+- Experience: 45%
+- Skills: 15%
 - Certifications: 5%
 
-**2 Pages (3+ years experience)**:
-- **Page 1**: Contact, Summary, Current Role, 1-2 Previous Roles
-- **Page 2**: Additional Experience, Key Projects, Skills, Education, Certifications
+**2 Pages (5+ years experience)**:
+- **Page 1**: Header, Education (brief), Current Role, 1-2 Previous Roles
+- **Page 2**: Additional Experience, Key Projects, Skills, Certifications
 
-### Bullet Point Allocation
-- **Current Role**: 4-6 bullets (emphasize recent achievements)
-- **Previous Roles**: 2-4 bullets each (focus on most relevant accomplishments)
-- **Projects**: 2-3 bullets each (context, solution, impact)
+### Bullet Point Allocation (Harvard Standard)
+- **Current Role**: 4-5 bullets maximum (one line each)
+- **Previous Roles**: 2-4 bullets each (one line each)
+- **Projects**: 2-3 bullets each (context, solution, impact - one line each)
+- **Maximum 4 bullets per role** (Harvard readability standard)
 
 ### Industry-Specific Emphasis Areas
 - **Technology**: System scale, performance metrics, automation impact, cost optimization
@@ -115,6 +129,13 @@ Group skills by relevance to target role:
 - **Business audiences**: Focus on business impact, ROI, and strategic outcomes
 - **Mixed audiences**: Balance technical competency with business value demonstration
 
+### Harvard Bullet Construction
+- **CAR Format**: Context + Action + Result in one line
+- **Strong action verbs**: Led, Developed, Implemented, Optimized, Achieved
+- **Quantified results**: Include specific metrics and percentages
+- **Active voice**: "Led team of 5" not "Team of 5 was led"
+- **No personal pronouns**: Avoid I, me, my, we, us
+
 ### Quantification Standards by Industry
 - **Technology**: Uptime percentages, performance improvements, cost savings, deployment frequency
 - **Healthcare**: Patient satisfaction scores, safety improvements, compliance rates, efficiency metrics
@@ -123,12 +144,20 @@ Group skills by relevance to target role:
 
 ## Quality Assurance Checklist
 
+### Harvard Format Compliance
+- [ ] Section order follows Harvard standard (Education before Experience for recent graduates)
+- [ ] All bullets are one line maximum
+- [ ] Header format includes name, contact, LinkedIn/portfolio
+- [ ] Maximum 4 bullets per role
+- [ ] Parallel structure maintained throughout
+- [ ] No personal pronouns used
+
 ### Universal Standards
 - [ ] All achievements are quantified with relevant metrics
 - [ ] Language matches target industry and role level
 - [ ] No TODO markers remain in final output
-- [ ] Harvard format compliance maintained throughout
 - [ ] ATS-friendly formatting and keyword optimization
+- [ ] Professional tone appropriate for target audience
 
 ### Role-Specific Validation
 - [ ] Experience demonstrates clear progression toward target role

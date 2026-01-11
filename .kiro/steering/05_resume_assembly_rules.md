@@ -1,3 +1,6 @@
+---
+inclusion: always
+---
 # Resume Assembly Rules and Logic
 
 ## Content Selection Process
@@ -122,7 +125,7 @@ Include generation metadata at top of resume file:
 ```markdown
 <!-- Generated: YYYY-MM-DD HH:MM -->
 <!-- Target Role: {role-name} -->
-<!-- Template: template.view.md -->
+<!-- Template: .kiro/steering/06_template.md -->
 <!-- Content Selected: {count} roles, {count} projects -->
 <!-- Length: {word-count} words, {page-estimate} pages -->
 ```
@@ -144,7 +147,7 @@ Before finalizing output:
 ## Universal Template Integration
 
 ### Dynamic Content Selection
-The universal template (`template.view.md`) provides framework while Kiro applies intelligent selection:
+The universal template (`.kiro/steering/06_template.md`) provides framework while Kiro applies intelligent selection:
 - **Role analysis**: Parse user prompt to understand target role requirements
 - **Industry adaptation**: Adjust terminology and emphasis for target industry
 - **Experience level**: Adapt length and detail based on years of experience

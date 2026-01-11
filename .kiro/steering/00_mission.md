@@ -1,3 +1,6 @@
+---
+inclusion: always
+---
 # Mission: Resume-as-Code
 
 ## Purpose

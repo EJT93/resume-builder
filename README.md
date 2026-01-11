@@ -25,7 +25,6 @@ profile/           # Personal identity and contact information
 experience/        # Professional experience content
 ├── roles.md       # All professional positions
 └── projects.md    # All projects and initiatives
-template.view.md   # Universal resume template for any profession
 resumes/           # Generated resume files (gitignored)
 ```
 
@@ -72,8 +71,9 @@ Use Kiro IDE with natural language prompts for any profession:
 - `01_repo_map.md` - Structure and navigation
 - `02_content_model.md` - Atom types and Harvard-compliant formats
 - `03_writing_rules.md` - Harvard resume standards and quality guidelines
-- `04_question_bank.md` - Kiro's direct resume generation approach
+- `04_validation.md` - Resume validation and quality assurance process
 - `05_resume_assembly_rules.md` - Selection and ordering logic
+- `06_template.md` - Universal resume template for any profession
 
 ## Example Usage
 
@@ -83,7 +83,7 @@ Use Kiro IDE with natural language prompts for any profession:
 Use Harvard resume format, emphasize automation and scalability experience, keep it to 1 page."
 
 # Kiro will:
-1. Reference universal template and Harvard formatting rules
+1. Reference universal template and Harvard formatting rules from steering files
 2. Select relevant content based on DevOps keywords and fintech industry
 3. Apply appropriate technical terminology and compliance focus
 4. Generate Harvard-standard resume in resumes/ folder with proper formatting
@@ -93,7 +93,7 @@ Use Harvard resume format, emphasize automation and scalability experience, keep
 
 1. **Add new experiences**: Update `experience/roles.md` and `experience/projects.md`
 2. **Update existing content**: Edit entries to add metrics or refine descriptions
-3. **Refine template**: Update universal template based on what works best across different professions
+3. **Refine steering**: Update rules and template based on what works best across different professions
 
 ## Privacy and Security
 

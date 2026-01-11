@@ -1,3 +1,6 @@
+---
+inclusion: always
+---
 # Writing Rules and Harvard Resume Standards
 
 ## Harvard Resume Format Requirements
