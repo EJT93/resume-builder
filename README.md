@@ -30,10 +30,12 @@ resumes/           # Generated resume files (gitignored)
 
 ## How It Works
 
-1. **Store content as atoms**: Each experience, skill, or achievement is a separate Markdown file
-2. **Define assembly rules**: View files specify how to select and arrange content for different roles
-3. **Create targeted resumes**: Kiro IDE uses universal template to assemble resumes for any profession
-4. **Maintain accuracy**: All facts stored once, TODO markers for missing information
+1. **Store content as atoms**: Each experience, skill, or achievement is stored in structured Markdown files
+2. **Follow Harvard standards**: All content follows Harvard resume formatting and quality requirements
+3. **Universal template**: Single template structure adapts to any profession or industry
+4. **Automatic validation**: Every generated resume passes comprehensive quality assurance checks
+5. **Create targeted resumes**: Kiro IDE assembles resumes using natural language prompts
+6. **Maintain accuracy**: All facts stored once, TODO markers for missing information
 
 ## Getting Started
 
@@ -61,19 +63,20 @@ Use Kiro IDE with natural language prompts for any profession:
 
 - **Truth in one place**: Each fact exists in exactly one file
 - **No fabrication**: Missing information marked with TODO, never invented
+- **Harvard compliance**: All resumes follow Harvard Business School formatting standards
 - **Universal applicability**: Works for any profession, not just engineering
+- **Validation-first**: Every resume passes comprehensive quality assurance before output
 - **Markdown-only**: No scripts, templates, or complex tooling
 - **Steering-driven**: All behavior defined in `.kiro/steering/` files
 
 ## Steering Files Reference
 
-- `00_mission.md` - Purpose and principles
-- `01_repo_map.md` - Structure and navigation
-- `02_content_model.md` - Atom types and Harvard-compliant formats
-- `03_writing_rules.md` - Harvard resume standards and quality guidelines
-- `04_validation.md` - Resume validation and quality assurance process
-- `05_resume_assembly_rules.md` - Selection and ordering logic
-- `06_template.md` - Universal resume template for any profession
+- `mission.md` - Core purpose, principles, and guardrails
+- `structure.md` - Repository organization and file relationships
+- `content-model.md` - Content structure requirements and quality standards
+- `writing-rules.md` - Harvard resume standards and formatting rules
+- `validation.md` - Comprehensive quality assurance and compliance checks
+- `template.md` - Universal resume formatting and assembly rules
 
 ## Example Usage
 
@@ -83,10 +86,12 @@ Use Kiro IDE with natural language prompts for any profession:
 Use Harvard resume format, emphasize automation and scalability experience, keep it to 1 page."
 
 # Kiro will:
-1. Reference universal template and Harvard formatting rules from steering files
-2. Select relevant content based on DevOps keywords and fintech industry
-3. Apply appropriate technical terminology and compliance focus
-4. Generate Harvard-standard resume in resumes/ folder with proper formatting
+1. Apply universal template with Harvard formatting standards from steering files
+2. Select relevant content from roles.md and projects.md based on DevOps keywords
+3. Adapt technical terminology and emphasis for fintech industry requirements
+4. Run comprehensive validation against all steering file requirements
+5. Generate compliant resume in resumes/ folder with proper naming convention
+6. Provide validation report confirming Harvard standards compliance
 ```
 
 ## Contributing to Your Own Repository

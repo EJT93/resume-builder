@@ -10,24 +10,24 @@ This file defines the validation process that Kiro must perform on every generat
 ## Mandatory Validation Process
 Before finalizing any resume, Kiro MUST validate against ALL steering files in sequential order:
 
-### 1. Mission Compliance (00_mission.md)
+### 1. Mission Compliance (mission.md)
 - [ ] **Truth in one place**: All content sourced from profile/experience files only
 - [ ] **No fabrication**: No invented facts, experiences, or metrics
 - [ ] **Markdown-only**: Clean markdown format with no scripts or complex tooling
 - [ ] **Professional accuracy**: All company names, dates, and titles are exact
 - [ ] **TODO-free**: No TODO markers remain in final output
 
-### 2. Repository Structure Compliance (01_repo_map.md)
+### 2. Repository Structure Compliance (structure.md)
 - [ ] **Content sourcing**: All content properly sourced from designated files
 - [ ] **File relationships**: Profile files included, experience files selectively used
 - [ ] **Naming convention**: Output file follows `{target-role}-{date}.md` format
 
-### 3. Content Model Compliance (02_content_model.md)
+### 3. Content Model Compliance (content-model.md)
 - [ ] **Profile integration**: All profile files (identity, summary, skills, education, certifications) included
 - [ ] **Experience selection**: Content properly selected from roles.md and projects.md
 - [ ] **Structured format**: Content follows defined patterns and frontmatter standards
 
-### 4. Harvard Writing Standards Compliance (03_writing_rules.md)
+### 4. Harvard Writing Standards Compliance (writing-rules.md)
 - [ ] **Section order**: Follows Harvard standard (Header → Education → Experience → Projects → Skills → Certifications)
 - [ ] **Bullet format**: All bullets are one line maximum
 - [ ] **Header format**: Includes name, contact, LinkedIn/portfolio in proper format
@@ -40,16 +40,7 @@ Before finalizing any resume, Kiro MUST validate against ALL steering files in s
 - [ ] **Maximum bullets**: No more than 4 bullets per role
 - [ ] **Length compliance**: Meets Harvard length guidelines (1 page for 0-5 years, 2 pages max for 5+ years)
 
-### 5. Assembly Rules Compliance (05_resume_assembly_rules.md)
-- [ ] **Content selection**: Prioritizes recent experience (last 5-10 years)
-- [ ] **Relevance scoring**: Selected content matches target role requirements
-- [ ] **Impact prioritization**: Emphasizes quantified achievements
-- [ ] **Mandatory inclusions**: All profile files included, current role included
-- [ ] **Proper ordering**: Reverse chronological for roles, impact-based for projects
-- [ ] **Length constraints**: Meets target length for experience level
-- [ ] **Metadata inclusion**: Proper generation metadata at top of file
-
-### 6. Template Compliance (06_template.md)
+### 5. Template Compliance (template.md)
 - [ ] **Role adaptation**: Content properly adapted for target role and industry
 - [ ] **Section configuration**: Follows Harvard standard section order
 - [ ] **Industry terminology**: Uses appropriate terminology for target industry
@@ -80,12 +71,11 @@ Target Role: {role-name}
 File: resumes/{filename}
 
 STEERING FILE COMPLIANCE:
-✅ 00_mission.md - Mission compliance verified
-✅ 01_repo_map.md - Repository structure compliance verified  
-✅ 02_content_model.md - Content model compliance verified
-✅ 03_writing_rules.md - Harvard writing standards verified
-✅ 05_resume_assembly_rules.md - Assembly rules compliance verified
-✅ 06_template.md - Template compliance verified
+✅ mission.md - Mission compliance verified
+✅ structure.md - Repository structure compliance verified  
+✅ content-model.md - Content model compliance verified
+✅ writing-rules.md - Harvard writing standards verified
+✅ template.md - Template compliance verified
 
 RESULT: ✅ PASS - Resume meets all steering file requirements
 ```
@@ -103,3 +93,26 @@ This validation process should be:
 - **Blocking**: Prevents output of non-compliant resumes
 - **Transparent**: Provides clear feedback on any failures
 - **Consistent**: Same validation applied regardless of target role or industry
+
+## Advanced Validation Checks
+
+### Content Quality Validation
+- [ ] **Metric specificity**: All percentages and numbers include context
+- [ ] **Achievement impact**: Each bullet demonstrates clear business value
+- [ ] **Industry relevance**: Terminology matches target role requirements
+- [ ] **Consistency**: Formatting, tense, and style consistent throughout
+- [ ] **Completeness**: No missing sections or incomplete information
+
+### ATS Compatibility Validation
+- [ ] **Font compliance**: Uses standard, ATS-friendly fonts
+- [ ] **Format simplicity**: No complex formatting, graphics, or tables
+- [ ] **Keyword optimization**: Includes relevant industry keywords naturally
+- [ ] **Section headers**: Uses standard, recognizable section names
+- [ ] **File format**: Clean markdown that converts well to other formats
+
+### Professional Standards Validation
+- [ ] **Contact accuracy**: All contact information is current and professional
+- [ ] **Date consistency**: All dates are logical and properly formatted
+- [ ] **Company accuracy**: All company names and titles are exact
+- [ ] **Geographic consistency**: Location information is accurate and consistent
+- [ ] **Professional tone**: Language is appropriate for target industry and role level
